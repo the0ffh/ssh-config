@@ -1,0 +1,13 @@
+Host foo
+  IdentityFile ~/.ssh/foo.id_ed25519
+
+Host bar
+  HostName test.com
+  IdentityFile ~/.ssh/bar.id_ed25519
+
+Host baz
+  Hostname test-baz.com
+
+Host *
+  IdentitiesOnly yes
+  LogLevel DEBUG1
